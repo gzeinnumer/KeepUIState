@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    MyLibSavedInstanceState
+    Keep UI State
 </h1>
 
 <p align="center">
@@ -143,12 +143,12 @@ binding.btnLogin.setOnClickListener(v -> {
 ```
 
 Here is Full Code
-[MainActivity.java](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/java/com/gzeinnumer/mylibsavedinstancestate/activity/MainActivity.java)
- & [activity_main.xml](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/res/layout/activity_main.xml)
+[MainActivity.java](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/java/com/gzeinnumer/keepuistate/activity/MainActivity.java)
+ & [activity_main.xml](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/res/layout/activity_main.xml)
 
 Preview:
 
-|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example1.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example2.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example3.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example4.gif)|
+|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example1.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example2.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example3.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example4.gif)|
 |---|---|---|---|
 |**(Before)** Data lost in `onBackPressed()`|**(Before)** Data lost in `onDestroy()`|**(After)** Data keep in `onBackPressed()`|**(After)** Data keep in `onDestroy()`|
 
@@ -191,12 +191,12 @@ public class HomeFragment extends Fragment {
 ```
 
 Here is Full Code
-[HomeFragment.java](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/java/com/gzeinnumer/mylibsavedinstancestate/fragment/HomeFragment.java)
- & [fragment_home.xml](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/res/layout/fragment_home.xml)
+[HomeFragment.java](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/java/com/gzeinnumer/keepuistate/fragment/HomeFragment.java)
+ & [fragment_home.xml](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/res/layout/fragment_home.xml)
 
 Preview:
 
-|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example5.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example6.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example7.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example8.gif)|
+|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example5.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example6.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example7.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example8.gif)|
 |---|---|---|---|
 |**(Before)** Data lost in `onBackPressed()`|**(Before)** Data lost in `onDestroy()`|**(After)** Data keep in `onBackPressed()`|**(After)** Data keep in `onDestroy()`|
 
@@ -247,13 +247,13 @@ public class RecyclerViewActivity extends AppCompatActivity {
 ```
 
 Here is Full Code
-[RecyclerViewActivity.java](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/java/com/gzeinnumer/mylibsavedinstancestate/recyclerView/RecyclerViewActivity.java)
- & [MyModel.java](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/java/com/gzeinnumer/mylibsavedinstancestate/recyclerView/MyModel.java)
- & [activity_recycler_view.xml](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/res/layout/activity_recycler_view.xml)
+[RecyclerViewActivity.java](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/java/com/gzeinnumer/keepuistate/recyclerView/RecyclerViewActivity.java)
+ & [MyModel.java](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/java/com/gzeinnumer/keepuistate/recyclerView/MyModel.java)
+ & [activity_recycler_view.xml](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/res/layout/activity_recycler_view.xml)
 
 Preview:
 
-|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example13.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example14.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example15.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example16.gif)|
+|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example13.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example14.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example15.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example16.gif)|
 |---|---|---|---|
 |**(Before)** Data lost in `onBackPressed()` |**(Before)** Data lost in `onDestroy()`|**(After)** Data keep in `onBackPressed()`|**(After)** Data keep in `onDestroy()`|
 
@@ -341,12 +341,12 @@ public class ImageActivity extends AppCompatActivity {
 ```
 
 Here is Full Code
-[ImageActivity.java](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/java/com/gzeinnumer/mylibsavedinstancestate/image/ImageActivity.java)
- & [activity_image.xml](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/app/src/main/res/layout/activity_image.xml)
+[ImageActivity.java](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/java/com/gzeinnumer/keepuistate/image/ImageActivity.java)
+ & [activity_image.xml](https://github.com/gzeinnumer/KeepUIState/blob/master/app/src/main/res/layout/activity_image.xml)
 
 Preview:
 
-|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example9.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example10.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example11.gif)|![](https://github.com/gzeinnumer/MyLibSavedInstanceState/blob/master/preview/example12.gif)|
+|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example9.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example10.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example11.gif)|![](https://github.com/gzeinnumer/KeepUIState/blob/master/preview/example12.gif)|
 |---|---|---|---|
 |**(Before)** Data lost in `onBackPressed()`|**(Before)** Data lost in `onDestroy()`|**(After)** Data keep in `onBackPressed()`|**(After)** Data keep in `onDestroy()`|
 
