@@ -269,14 +269,51 @@ public class ImageActivity extends AppCompatActivity {
 
     ...
 
+    private void loadImageGlide() {
+        String imgUrl = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
+
+        Glide.with(this).load(imgUrl).error(R.mipmap.ic_launcher).listener(new RequestListener<Drawable>() {
+            @Override
+            public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                return false;
+            }
+
+            @Override
+            public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                try {
+                    stateUI.addViewBitmap("binding.img", (BitmapDrawable) resource);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return false;
+            }
+        }).into(binding.img);
+    }
+
+    private void loadImagePicasso() {
+        String imgUrl = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
+
+        Picasso.get().load(imgUrl).into(binding.img, new Callback() {
+            @Override
+            public void onSuccess() {
+                try {
+                    stateUI.addViewBitmap("binding.img", (BitmapDrawable) binding.img.getDrawable());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onError(Exception e) {
+
+            }
+        });
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
-        try {
-            stateUI.addViewBitmap("binding.img", (BitmapDrawable) binding.img.getDrawable());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
         stateUI.saveState();
     }
 

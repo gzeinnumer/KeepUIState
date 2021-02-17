@@ -9,19 +9,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.gson.reflect.TypeToken;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.helper.BindViewHolder;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.singleType.AdapterBuilder;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.singleType.AdapterCreator;
-import com.gzeinnumer.mylibsavedinstancestate.ListStateCallBack;
-import com.gzeinnumer.mylibsavedinstancestate.ListStateReceiver;
-import com.gzeinnumer.mylibsavedinstancestate.MenuActivity;
-import com.gzeinnumer.mylibsavedinstancestate.R;
-import com.gzeinnumer.mylibsavedinstancestate.StateUI;
-import com.gzeinnumer.mylibsavedinstancestate.StateUIBuilder;
-import com.gzeinnumer.mylibsavedinstancestate.databinding.ActivityRecyclerViewBinding;
-import com.gzeinnumer.mylibsavedinstancestate.databinding.ItemRvBinding;
-import com.gzeinnumer.mylibsavedinstancestate.utils.CustomToastDown;
-import com.gzeinnumer.mylibsavedinstancestate.utils.CustomToastUp;
+import com.gzeinnumer.keepuistate.MenuActivity;
+import com.gzeinnumer.keepuistate.R;
+import com.gzeinnumer.keepuistate.databinding.ActivityRecyclerViewBinding;
+import com.gzeinnumer.keepuistate.databinding.ItemRvBinding;
+import com.gzeinnumer.keepuistate.utils.CustomToastDown;
+import com.gzeinnumer.keepuistate.utils.CustomToastUp;
+import com.gzeinnumer.kus.ListStateCallBack;
+import com.gzeinnumer.kus.ListStateReceiver;
+import com.gzeinnumer.kus.StateUI;
+import com.gzeinnumer.kus.StateUIBuilder;
+import com.gzeinnumer.rab.helper.BindViewHolder;
+import com.gzeinnumer.rab.singleType.AdapterBuilder;
+import com.gzeinnumer.rab.singleType.AdapterCreator;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -45,10 +45,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
         });
         binding.btnClearBack.setOnClickListener(view -> {
             stateUI.clearState();
-            startActivity(new Intent(getApplicationContext(), com.gzeinnumer.mylibsavedinstancestate.MenuActivity.class));
+            startActivity(new Intent(getApplicationContext(), MenuActivity.class));
         });
         binding.btnSaveBack.setOnClickListener(view -> {
-            startActivity(new Intent(getApplicationContext(), com.gzeinnumer.mylibsavedinstancestate.MenuActivity.class));
+            startActivity(new Intent(getApplicationContext(), MenuActivity.class));
             finish();
         });
     }
@@ -105,7 +105,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 .setList(list)
                 .onBind(new BindViewHolder<MyModel>() {
                     @Override
-                    public void bind(View holder, MyModel data, int position) {
+                    public void bind(AdapterCreator<MyModel> adapter, View holder, MyModel data, int position) {
                         ItemRvBinding bindingItem = ItemRvBinding.bind(holder);
                         bindingItem.tv.setText(data.getName());
 

@@ -6,9 +6,10 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.gzeinnumer.mylibsavedinstancestate.fragment.FragmentTestActivity;
-import com.gzeinnumer.mylibsavedinstancestate.image.ImageActivity;
-import com.gzeinnumer.mylibsavedinstancestate.recyclerView.RecyclerViewActivity;
+import com.gzeinnumer.keepuistate.activity.MainActivity;
+import com.gzeinnumer.keepuistate.fragment.FragmentTestActivity;
+import com.gzeinnumer.keepuistate.image.ImageActivity;
+import com.gzeinnumer.keepuistate.recyclerView.RecyclerViewActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
