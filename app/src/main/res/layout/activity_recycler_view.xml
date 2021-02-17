@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".recyclerView.RecyclerViewActivity">
+
+
+    <Button
+        android:id="@+id/btn_generate_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Data"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_clear_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear State And Back To Menu"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_save_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save State And Back To Menu"
+        android:textAllCaps="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        tools:listitem="@layout/item_rv" />
+</LinearLayout>
